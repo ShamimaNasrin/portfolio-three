@@ -1,7 +1,12 @@
+import { Toaster } from "react-hot-toast";
+import MainPage from "./pages/mainPage/MainPage";
+
 function App() {
   return (
     <>
-      <p className="">Shamima Nasrin</p>
+      <MainPage />
+      <p className="text-blue-500">shamima nasrin</p>
+      <Toaster />
     </>
   );
 }
