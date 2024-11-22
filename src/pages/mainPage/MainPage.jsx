@@ -1,5 +1,19 @@
+import SideBar from "./SideBar";
+import About from "./about/About";
+
 const MainPage = () => {
-  return <div>main page</div>;
+  return (
+    <>
+      <div className="bg-white flex gap-8 lg:px-4 md:px-8 px-4 relative z-50 ">
+        <div className="lg:block hidden fixed top-1/2 -translate-y-1/2 border">
+          <SideBar />
+        </div>
+        <div className="lg:ml-[450px] border">
+          <About />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default MainPage;

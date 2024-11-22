@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <MainPage />
-      <p className="text-blue-500">shamima nasrin</p>
       <Toaster />
       <ScrollToTop />
     </>
