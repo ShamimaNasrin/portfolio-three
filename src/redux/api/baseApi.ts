@@ -16,6 +16,16 @@ export const baseApi = createApi({
       }),
       providesTags: ["projects"],
     }),
+
+    // Query to get a product by ID
+    fetchProjectById: builder.query({
+      query: (projectId) => ({
+        url: `/projects/${projectId}`,
+        method: "GET",
+      }),
+      providesTags: ["projects"],
+    }),
+
     // Query to fetch all products
     fetchAllSkills: builder.query({
       query: () => ({
@@ -39,5 +49,6 @@ export const baseApi = createApi({
 export const {
   useFetchAllBlogsQuery,
   useFetchAllProjectsQuery,
+  useFetchProjectByIdQuery,
   useFetchAllSkillsQuery,
 } = baseApi;
