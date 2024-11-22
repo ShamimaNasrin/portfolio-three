@@ -15,7 +15,7 @@ const About = () => {
             </p>
             <p className="mt-4">
               I enjoy building interactive and dynamic web applications, with a
-              strong focus on the MERN stack (MongoDB, Express, React, Node.js).
+              strong focus on the MERN stack.
             </p>
             <p className="mt-4">
               My goal is to create innovative and efficient solutions that
