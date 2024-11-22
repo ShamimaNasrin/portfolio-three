@@ -1,7 +1,10 @@
 import SideBar from "./SideBar";
 import About from "./about/About";
+import BlogSection from "./blogs/BlogSection";
 import Contact from "./contact/Contact";
 import EducationSection from "./education/EducationSection";
+import ProjectSection from "./projects/ProjectSection";
+import SkillSection from "./skills/SkillSection";
 
 const MainPage = () => {
   return (
@@ -13,6 +16,9 @@ const MainPage = () => {
         <div className="lg:ml-[450px] ">
           <About />
           <EducationSection />
+          <SkillSection />
+          <ProjectSection />
+          <BlogSection />
           <Contact />
         </div>
       </div>
