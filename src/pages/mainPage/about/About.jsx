@@ -25,7 +25,7 @@ const About = () => {
           </div>
 
           {/* Statistics Section */}
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="max-w-[660px] grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 justify-center  gap-8 ">
             <div className="text-center p-4 border-b-4 border-violet-600">
               <span className="text-violet-600 text-5xl font-bold">1+</span>
               <p className="mt-2 text-lg font-medium text-gray-700">

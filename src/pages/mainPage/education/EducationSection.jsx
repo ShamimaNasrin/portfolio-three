@@ -35,7 +35,7 @@ const EducationSection = () => {
       <div className="container mx-auto ">
         <div className="flex justify-between flex-col gap-16 items-start">
           {/* Text Content */}
-          <div className="grid grid-cols-2 items-start md:grid-cols-1">
+          <div className="grid grid-cols-1 items-start ">
             {eduData.map((edu) => (
               <div key={edu.id} className="relative pl-14 pb-5 last:pb-2 ">
                 {/* Vertical Line */}
