@@ -26,6 +26,25 @@ export const baseApi = createApi({
       providesTags: ["projects"],
     }),
 
+    // Mutation for creating a new skill
+    addNewSkills: builder.mutation({
+      query: (skillData) => ({
+        url: "/skills",
+        method: "POST",
+        body: skillData,
+      }),
+      invalidatesTags: ["skills"],
+    }),
+
+    // Mutation to remove skills
+    deleteSkills: builder.mutation({
+      query: (skillId) => ({
+        url: `/skills/${skillId}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["skills"],
+    }),
+
     // Query to fetch all products
     fetchAllSkills: builder.query({
       query: () => ({
@@ -51,4 +70,6 @@ export const {
   useFetchAllProjectsQuery,
   useFetchProjectByIdQuery,
   useFetchAllSkillsQuery,
+  useAddNewSkillsMutation,
+  useDeleteSkillsMutation,
 } = baseApi;

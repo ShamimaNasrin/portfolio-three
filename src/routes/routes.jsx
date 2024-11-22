@@ -6,6 +6,9 @@ import LoginMain from "../pages/login/LoginMain";
 import DashboardMain from "../pages/dashboard/DashboardMain";
 import BlogDetails from "../pages/blogDetails/BlogDetails";
 import BlogsMain from "../pages/blogs/BlogsMain";
+import BlogManagement from "../pages/dashboard/blogManage/BlogManagement";
+import SkillManagement from "../pages/dashboard/skillManage/skillManagement";
+import ProjectManagement from "../pages/dashboard/projectManage/projectManagement";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,19 @@ const router = createBrowserRouter([
   {
     path: "dashboard",
     element: <DashboardMain />,
+  },
+
+  {
+    path: "dashboard/skill-management",
+    element: <SkillManagement />,
+  },
+  {
+    path: "dashboard/project-management",
+    element: <ProjectManagement />,
+  },
+  {
+    path: "dashboard/blog-management",
+    element: <BlogManagement />,
   },
 
   {
